@@ -55,3 +55,20 @@ body {
     white-space: nowrap;
     width: 1px;
 }
+
+.main-grid {
+    display: grid;
+    grid-template-columns: 15rem auto;
+    grid-auto-flow: dense;
+    align-items: center;
+    min-height: 100dvh;
+    min-height: 100vh;
+}
+
+main {
+    grid-column: 2;
+}
+
+aside {
+    grid-column: 1;
+}
