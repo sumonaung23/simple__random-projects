@@ -90,3 +90,15 @@ aside {
     align-content: center;
     gap: 3rem;
 }
+
+
+.icon-list > li {
+    position: relative;
+}
+
+.icon-list > li::after {
+    content: '';
+    width: .25rem;
+    aspect-ratio: 1;
+    background-color: var(--clr-neutral-100);
+}
