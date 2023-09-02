@@ -82,9 +82,10 @@ aside {
 
 .icon-list {
     height: 100%;
-    border-left: 1px solid orange;
+    border-left: 1px solid var(--clr-primary-300);
+    padding: 0;
     margin: 0;
-    margin-left: 4rem;
+    margin-left: clamp(3rem, 10vw, 10rem);
     list-style: none;
     display: grid;
     align-content: center;
@@ -94,11 +95,20 @@ aside {
 
 .icon-list > li {
     position: relative;
+    padding-left: 3rem;
 }
 
 .icon-list > li::after {
+    --size: .25rem;
+
     content: '';
-    width: .25rem;
+    position: absolute;
+    top: 0;
+    left: calc(var(--size) / 2);
+    width: var(--size);
+    transform: translate(-50%);
     aspect-ratio: 1;
-    background-color: var(--clr-neutral-100);
-}
+    outline: 1rem solid var(--clr-primary-400);
+    border-radius: 50%;
+    background: var(--clr-neutral-100);
+} 
