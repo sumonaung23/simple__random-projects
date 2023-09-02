@@ -38,6 +38,7 @@ html {
 }
 
 body {
+    margin: 0;
     background-color: var(--clr-primary-800);
     color: var(--clr-neutral-100);
     font-family: var(--ff-base);
@@ -71,4 +72,21 @@ main {
 
 aside {
     grid-column: 1;
+    align-self: stretch;
+}
+
+.job-experience {
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.icon-list {
+    height: 100%;
+    border-left: 1px solid orange;
+    margin: 0;
+    margin-left: 4rem;
+    list-style: none;
+    display: grid;
+    align-content: center;
+    gap: 3rem;
 }
