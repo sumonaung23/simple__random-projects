@@ -59,7 +59,8 @@ body {
 
 .main-grid {
     display: grid;
-    grid-template-columns: 15rem auto;
+    grid-template-columns: auto 1fr;
+    gap: clamp(3rem, 10vw, 10rem);
     grid-auto-flow: dense;
     align-items: center;
     min-height: 100dvh;
@@ -75,9 +76,26 @@ aside {
     align-self: stretch;
 }
 
+.eyebrow {
+    color: var(--clr-secondary-400);
+    font-size: var(--fs-300);
+    font-weight: var(--fw-bold);
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    margin: 0;
+}
+
 .job-experience {
     display: grid;
+    gap: 1rem;
     grid-auto-flow: column;
+}
+
+.job {
+    width: 28rem;
+    border-radius: 0.25rem;
+    padding: 2rem;
+    background-color: var(--clr-primary-800);
 }
 
 .icon-list {
