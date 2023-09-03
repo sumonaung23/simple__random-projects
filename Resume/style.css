@@ -92,7 +92,8 @@ aside {
     gap: 1rem;
     grid-auto-flow: column;
     overflow-x: auto;
-    padding-bottom: 2rem;
+    position: relative;
+    padding-block: 2rem;
     scrollbar-color: var(--clr-accent-400) var(--clr-primary-800);
 }
 
@@ -115,10 +116,19 @@ aside {
     border-radius: 0.25rem;
     padding: 2rem;
     background-color: var(--clr-primary-800);
+    position: relative;
 }
 
 .job * {
     margin: 0;
+}
+
+.job:first-child::before {
+    content: 'Current role';
+    position: absolute;
+    color: var(--clr-accent-400);
+    top: 0rem;
+    left: 0;
 }
 
 .year {
