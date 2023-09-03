@@ -93,6 +93,7 @@ aside {
     grid-auto-flow: column;
     overflow-x: auto;
     padding-bottom: 2rem;
+    scrollbar-color: var(--clr-accent-400) var(--clr-primary-800);
 }
 
 .job-experience::-webkit-scrollbar {
