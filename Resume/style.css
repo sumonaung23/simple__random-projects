@@ -111,12 +111,17 @@ aside {
     border-radius: 100vw; 
 }
 
+.job-experience::after {
+    content: '';
+    width: 50px;
+    background: transparent;
+}
+
 .job {
     width: 28rem;
     border-radius: 0.25rem;
     padding: 2rem;
     background-color: var(--clr-primary-800);
-    position: relative;
 }
 
 .job * {
